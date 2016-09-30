@@ -1,0 +1,26 @@
+.header {
+  background: #157CA0;
+  padding: 1em;
+}
+
+.headerLink,
+.headerLink:active,
+.headerLink:hover,
+.headerLink:visited
+{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.linkList {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.linkList li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 2em 0 0;
+  padding: 0;
+}
