@@ -39,6 +39,10 @@ module.exports = {
         include: __dirname + '/js'
       },
       {
+        test: /\.jpeg$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'

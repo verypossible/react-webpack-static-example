@@ -4,7 +4,7 @@ _How To:_
 
 ```bash
 npm start
-# => runs a development server for live reload and all
+# => runs a development server for live reload and all on localhost:8888
 
 npm run build
 # => builds all the assets for deployment
