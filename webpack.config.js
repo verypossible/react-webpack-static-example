@@ -2,7 +2,7 @@ var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var data = require('./js/data')
-const paths = ['/']
+const paths = ['/', '/about/']
 const scope = {
   window: {}
 }
@@ -12,7 +12,7 @@ var autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    'main': './index.js'
+    'main': './js/router.js'
   },
 
   output: {
