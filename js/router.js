@@ -4,8 +4,9 @@ import ReactDOMServer from 'react-dom/server'
 import { Router, RouterContext, match, createMemoryHistory, browserHistory } from 'react-router'
 
 import routes from './routes'
-import Main from './pages/Main'
 import template from './template'
+
+import Main from './pages/Main'
 
 if (typeof document !== 'undefined') {
 
