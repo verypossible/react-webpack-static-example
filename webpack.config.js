@@ -1,14 +1,9 @@
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-var data = require('./js/data')
-const paths = ['/', '/about/']
-const scope = {
-  window: {}
-}
-
 var precss       = require('precss');
 var autoprefixer = require('autoprefixer');
+
+const paths = ['/', '/about/']
 
 module.exports = {
   entry: {
@@ -26,7 +21,7 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('styles.css'),
-    new StaticSiteGeneratorPlugin('main', paths, { greet: 'Hello' }, scope)
+    new StaticSiteGeneratorPlugin('main', paths, { greet: 'Hello' })
   ],
 
   module: {
